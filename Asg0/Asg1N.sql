@@ -1,0 +1,5 @@
+SELECT DISTINCT ShipperName, DepartureDate 
+FROM SHIPMENT
+INNER JOIN SHIPMENT_ITEM ON SHIPMENT_ITEM.ShipmentID = SHIPMENT.ShipmentID
+WHERE Value > 1000
+ORDER BY ShipperName asc, DepartureDate desc;

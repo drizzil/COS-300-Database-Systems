@@ -1,0 +1,2 @@
+SELECT SKU_Description, SKU
+FROM SKU_DATA;

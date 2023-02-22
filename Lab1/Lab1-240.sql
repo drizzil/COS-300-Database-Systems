@@ -1,0 +1,4 @@
+SELECT SKU, SKU_Description, WAREHOUSE.WarehouseID, WarehouseCity, WarehouseState
+FROM WAREHOUSE, INVENTORY
+WHERE INVENTORY.WarehouseID = WAREHOUSE.WarehouseID
+AND WAREHOUSE.WarehouseID < 400;

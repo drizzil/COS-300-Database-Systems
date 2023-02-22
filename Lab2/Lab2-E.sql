@@ -1,0 +1,3 @@
+SELECT Phone, FirstName 
+FROM CUSTOMER
+WHERE FirstName LIKE 'B%';

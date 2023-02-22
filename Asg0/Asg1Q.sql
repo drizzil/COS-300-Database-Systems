@@ -1,0 +1,8 @@
+SELECT DISTINCT ShipperName, DepartureDate, Value
+FROM SHIPMENT
+INNER JOIN SHIPMENT_ITEM ON SHIPMENT_ITEM.ShipmentID = SHIPMENT.ShipmentID
+WHERE ItemID IN(
+    SELECT ItemID
+    FROM ITEM
+    WHERE City = "Singapore")
+ORDER BY ShipperName ASC, DepartureDate DESC;

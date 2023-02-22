@@ -1,0 +1,3 @@
+SELECT SKU, SKU_Description, WAREHOUSE.WarehouseID, WarehouseCity, WarehouseState
+FROM WAREHOUSE, INVENTORY
+WHERE WAREHOUSE.WarehouseID IN (100, 200, 300);

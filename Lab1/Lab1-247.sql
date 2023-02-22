@@ -1,0 +1,6 @@
+SELECT WarehouseID, AVG(QuantityOnHand)
+FROM INVENTORY
+WHERE WarehouseID IN
+	(SELECT DISTINCT WarehouseID
+	FROM WAREHOUSE
+	WHERE WarehouseID = 200);
